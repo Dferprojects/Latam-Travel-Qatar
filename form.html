@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/avicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css" type="text/css">
+    <title>FORM</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="./index.html">HOME</a>
+            <a href="./aboutUs.html">ABOUT US</a>
+            <a href="./contact.html">CONTACT</a>
+            <a href="./table.html">TABLES</a>
+            <a href="./list.html">HOTELS</a>
+            <a href="#">LOTTERY</a>
+            <a href="./index.html"><img src="./assets/logo.png" alt="logo" class="logo"></a>
+        </nav>
+    </header>
+    <main>
+       <form id="form"  action="./show_data.html">
+            <div>
+                <img src="./assets/image-8.png" alt="shirts" id="shirts">
+            </div>
+            <div>
+                <h2 class="title-form">Get the chance to win a football shirt filling this form</h2>
+            </div>
+            <div class="form-group">
+                <label for="firstname">Firstname:</label>
+                <input type="text" name="firstname" id="firstname" class="input">
+                <label for="lastname">Lastname:</label> 
+                <input type="text" name="lastname" id="lastname" class="input" >
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <input type="text" name="address" id="address" class="input" >
+                <label for="zipcode">Zip Code:</label> 
+                <input type="text" name="zipcode" id="zipcode"  class="input">
+            </div>
+            <div class="form-group">
+                <label for="age">Age:</label> 
+                <input type="number" name="age" id="age" min="1" max="100" class="input">
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" class="input">
+            </div>
+            
+            <div class="form-group">
+                <label for="continent">Continent:</label> 
+                    <select name="continent" id="continent" class="input">
+                        <option>Asia</option>
+                        <option>Africa</option>
+                        <option>América</option>
+                        <option>Antártica</option>
+                        <option>Europe</option>
+                        <option>Oceanía</option>
+                    </select>
+                <label for="country">Country:</label> 
+                <input type="text" name="country" id="country" class="input">
+            </div>
+           
+           <div class="form-group">
+                <div>
+                        <label for="phone">Phone:</label> 
+                        <input type="number" name="phone" id="phone" class="input">
+                </div> 
+                <div>   
+                        <label for="gender" class="gender">Gender:</label>
+                        <input type="radio" name="gender" value="woman" id="gender"> F
+                        <input type="radio" name="gender" value="man" id="gender-2"> M
+                </div>
+            </div>
+
+
+           <div>
+                <p>Payment options:</p>
+                <p><input type="radio" name="payment" value="Cash">Cash</p>
+                <p><input type="radio" name="payment" value="Credit cards">Credit cards</p>
+                <p><input type="radio" name="payment" value="Debit cards">Debit cards</p>
+           </div>
+
+           <div class="textarea">
+                <p>Services:</p>
+                <textarea name="textarea" id="textarea" rows="5" cols="30" maxlength="200"></textarea>
+           </div>
+
+            <div class="check">
+                <div>
+                    <input type="checkbox" required>I accept terms and conditions
+                </div>
+                <div>
+                    <input type="submit" id="btn" value="SUBMIT">
+                </div>
+            </div>
+        </form>
+    </main> 
+    <footer>
+        <p>Sitio web realizado para Mindhub - &copy; All rights reserved - 2022</p>
+    </footer>
+
+
+    
+</body>
+</html>
